@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <title>Hello World</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <h1>Hello World</h1>
+        <script type="text/javascript" src="http://localhost:9999"></script>
+        <script type="text/javascript">
+         remoteControl.register('change-background-color', function () {
+           document.body.style.backgroundColor = "rgb(" + rnd() + ", " + rnd() + ", " + rnd() + ")"
+         })
+
+         function rnd () {
+           return Math.floor(Math.random() * 255)
+         }
+        </script>
+    </body>
+</html>

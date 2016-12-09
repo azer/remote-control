@@ -1,0 +1,19 @@
+#!/usr/bin/env node
+
+const start = require("../")
+const internalIp = require("internal-ip")
+const command = require("minimist")(process.argv.slice(2))
+
+if (command.help) {
+  console.log(`remote-control
+
+    -p    --port
+    -h    --host
+          --quiet
+          --help
+`)
+  process.exit()
+}
+
+start(command.h || command.host || internalIp.v4(),
+      command.p || command.port || '9999', command)

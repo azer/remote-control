@@ -1,0 +1,19 @@
+{
+  "name": "remote-control",
+  "description": "Reload sources when requested via HTTP",
+  "version": "0.0.0",
+  "license": "BSD",
+  "author": "azer",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:azer/reload.git"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "debug": "^2.3.3",
+    "faye-websocket": "^0.11.0",
+    "internal-ip": "^1.2.0",
+    "minimist": "^1.2.0",
+    "route-map": "github:azer/route-map"
+  }
+}
