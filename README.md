@@ -13,7 +13,7 @@ $ npm install azer/remote-control
 Start running;
 
 ```bash
-$ npm run remote-control [port]
+$ npm run remote-control -p [port]
 // => Running at [internal-ip]:[port]
 ```
 
