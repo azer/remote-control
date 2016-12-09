@@ -72,6 +72,7 @@ function getClientSideCode (ip, port) {
   reconnect()
 
   return {
+    commands: commands,
     socket: ws,
     register: register
   }
