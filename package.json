@@ -15,5 +15,8 @@
     "internal-ip": "^1.2.0",
     "minimist": "^1.2.0",
     "route-map": "github:azer/route-map"
+  },
+  "bin": {
+    "remote-control": "./bin/remote-control"
   }
 }
